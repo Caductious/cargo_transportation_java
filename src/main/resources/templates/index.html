@@ -10,7 +10,27 @@
 
     <style>
         body {
-            background-color: powderblue;
+            background-color: #ebdbb2;
+        }
+
+        .header{
+            min-height: 100px;
+            background-color: #1d2021;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .header__link{
+            color: antiquewhite;
+            text-decoration: none;
+            height: fit-content;
+        }
+
+        .header__link:hover{
+            color: #fb4934;
         }
     </style>
 
@@ -19,9 +39,12 @@
 </head>
 
 <body>
-
+<header class="header">
+    <a class="header__link">Главная страница блога</a>
+    <a class="header__link">Административная панель управления блогом</a>
+</header>
 <blockquote class="blockquote text-center"><h1>Перевозки грузов</h1></blockquote>
-<h2>Ваше имя пользователя: <span th:text="${username}"></span>!</h2>
+<h2 class="blockquote text-center">Ваше имя пользователя: <span th:text="${username}"></span>!</h2>
 <div class="row">
     <div class="col-md-8 offset-md-4">
         <h4>Поиск груза по любому критерию:</h4>

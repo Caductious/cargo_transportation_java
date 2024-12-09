@@ -6,9 +6,8 @@
     <style>
         body{
             background-color: #ebdbb2;
-            background-image: url("https://c.tenor.com/GOV50ICkVY0AAAAd/tenor.gif");
             background-size: cover;
-            font-family: "Comic Sans MS";
+            font-family: "Trebuchet MS";
             position: relative;
 
         }
@@ -20,10 +19,11 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
+
         }
 
         .label{
-            color: red;
+            color: #fb4934;
             margin-right:auto;
             margin-left:auto;
             width: fit-content;
@@ -35,7 +35,8 @@
             width: 320px;
             text-align: center;
             margin-bottom: 20px;
-            font-family: "Comic Sans MS";
+            font-family: "Trebuchet MS";
+            border-radius: 10px;
         }
 
         .button_type_login{
@@ -45,27 +46,23 @@
         }
 
         .button_type_register{
-            border: #bdae93 3px solid;
+            border: #a89984 2px solid;
             background-color: #ebdbb2;
             color: #1d2021;
         }
 
         .button:hover{
             color: #1d2021;
-            background-color: #b16286;
+            background-color: #a89984;
         }
 
         .input__form{
             height: 50px;
             margin-bottom:5px;
-            font-family: "Comic Sans MS";
+            font-family: "Trebuchet MS";
         }
 
-        .mushroom{
-            margin-top: 100px;
-            margin-left:60%;
-            margin-top: 13%;
-        }
+
 
     </style>
 </head>
@@ -74,8 +71,8 @@
     <h1 class="label">Вход</h1>
     <form th:action="@{/login}" method="post">
         <div class="input">
-            <input type="text" name="username" placeholder="Username" class="input__form"/>
-            <input type="password" name="password" placeholder="Password" class="input__form"/>
+            <input type="text" name="username" placeholder="Имя пользователя" class="input__form"/>
+            <input type="password" name="password" placeholder="Пароль" class="input__form"/>
             <input type="submit" value="Вход" class="button button_type_login"/>
             <a href="/register">
                 <button type="button" class="button button_type_register">
@@ -86,6 +83,6 @@
     </form>
 
 </div>
-<a href="https://www.glitter-graphics.com"><img src="http://dl10.glitter-graphics.net/pub/475/475010nw15gbkh91.gif" width=320 height=320 class="mushroom"></a>
+
 </body>
 </html>
